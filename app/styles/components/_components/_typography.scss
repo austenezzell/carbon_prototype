@@ -1,0 +1,119 @@
+/**
+*
+* Typography
+*
+**/
+
+// Just normalizing text
+// Recommend using padding instead of margin
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+// Definitions
+.small,
+small {
+  font-size: $smallType;
+  line-height: $smallType * 1.4;
+  font-family: 'avenirregular', Arial, sans-serif;
+  font-weight: normal;
+}
+
+.base,
+p,
+ul,
+ol {
+  font-size: $smallType;
+  line-height: $smallType * 1.5;
+  margin-bottom:15px;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  color:darken($grey,40%);
+}
+span.bold {
+    font-family: 'GeorgiaBold';
+}
+span.italic {
+    font-family: 'GeorgiaItalic';
+}
+.quote {
+  font-family: 'GeorgiaItalic';
+  font-size: $mediumType;
+  line-height: $mediumType * 1.4;
+
+}
+.small,
+h5 {
+  letter-spacing: 1px;
+  font-size: $smallType;
+  line-height: $smallType * 1.4;
+  margin-bottom:10px;
+  font-family: 'avenirregular', helvetica, sans serif;
+  font-weight: normal;
+  color:darken($grey,40%);
+}
+
+.medium,
+h4 {
+  line-height: $mediumType * 1.4;
+  font-family: 'avenirregular', helvetica, sans serif;
+  font-weight: normal;
+  color:darken($grey,40%);
+}
+
+.large,
+h3 {
+  font-size: $largeType;
+  line-height: $largeType * 1.4;
+  margin-bottom:10px;
+  color:darken($grey,40%);
+  font-family: 'avenirbold', helvetica, sans serif;
+  font-weight: normal;
+}
+.xlarge,
+h2 {
+  font-size: $mediumType;
+  line-height: $mediumType * 1.2;
+  margin-bottom:10px;
+  font-family: 'avenirbold', helvetica, sans serif;
+  font-weight: 800;
+  color:white;
+    @media(min-width:500px){
+      font-size: $xLargeType;
+      line-height: $xLargeType * 1.1;
+    }
+    @media(min-width:700px){
+      font-size: $xxLargeType;
+      line-height: $xxLargeType * 1.1;
+      margin-bottom:60px;
+    }
+}
+
+.xxlarge,
+h1 {
+  font-size: $mediumType;
+  line-height: $mediumType * 1.2;
+  margin-bottom:10px;
+  font-family: 'avenirbold', helvetica, sans serif;
+  font-weight: 800;
+  color:white;
+    @media(min-width:500px){
+      font-size: $xLargeType;
+      line-height: $xLargeType * 1.1;
+    }
+    @media(min-width:700px){
+      font-size: $xxLargeType;
+      line-height: $xxLargeType * 1.1;
+      margin-bottom:60px;
+    }
+}
+
+.huge {
+  font-size: $hugeType;
+  line-height: $hugeType * 1.4;
+}
+
+
+li > p {
+  padding-top: 0;
+}

@@ -1,0 +1,174 @@
+/**
+*
+* Global
+*
+**/
+
+// COLOR
+$grey: #8C939E;
+$blue: #090B18;
+$yellow: #E8DF6F;
+$red: #AC4545;
+
+$green: #50E3C2;
+
+$padding: 15px;
+$column: 12.5%;
+
+
+// FONT SIZE
+$smallType: 16px;
+$mediumType: 22px;
+$largeType: 32px;
+$xLargeType: 46px;
+$xxLargeType: 68px;
+$hugeType: 86px;
+
+::selection {
+  background: $green; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: $green; /* WebKit/Blink Browsers */
+  color: white;
+}
+
+.transition {
+  transition: all .4s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+button {
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+
+}
+
+
+
+
+pre {
+  padding: 13px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: black;
+}
+.fullHeight {
+  position: relative;
+}
+
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+
+// FONTS
+
+@font-face {
+    font-family: 'avenirbold';
+    src: url('../fonts/avenir-heavy-webfont-webfont.eot');
+    src: url('../fonts/avenir-heavy-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir-heavy-webfont-webfont.woff') format('woff'),
+         url('../fonts/avenir-heavy-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/avenir-heavy-webfont-webfont.svg#avenirbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenirbold_italic';
+    src: url('../fonts/avenir-heavyoblique-webfont-webfont.eot');
+    src: url('../fonts/avenir-heavyoblique-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir-heavyoblique-webfont-webfont.woff') format('woff'),
+         url('../fonts/avenir-heavyoblique-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/avenir-heavyoblique-webfont-webfont.svg#avenirbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aveniritalic';
+    src: url('../fonts/avenir-bookoblique-webfont-webfont.eot');
+    src: url('../fonts/avenir-bookoblique-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir-bookoblique-webfont-webfont.woff') format('woff'),
+         url('../fonts/avenir-bookoblique-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/avenir-bookoblique-webfont-webfont.svg#aveniritalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenirregular';
+    src: url('../fonts/avenir-book-webfont-webfont.eot');
+    src: url('../fonts/avenir-book-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir-book-webfont-webfont.woff') format('woff'),
+         url('../fonts/avenir-book-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/avenir-book-webfont-webfont.svg#avenirregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// GEORGIA
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia.eot');
+    src: url('../fonts/Georgia.eot') format('embedded-opentype'),
+         url('../fonts/Georgia.woff2') format('woff2'),
+         url('../fonts/Georgia.woff') format('woff'),
+         url('../fonts/Georgia.ttf') format('truetype'),
+         url('../fonts/Georgia.svg#Georgia') format('svg');
+}
+
+@font-face {
+    font-family: 'GeorgiaBold';
+    src: url('../fonts/GeorgiaBold.eot');
+    src: url('../fonts/GeorgiaBold.eot') format('embedded-opentype'),
+         url('../fonts/GeorgiaBold.woff2') format('woff2'),
+         url('../fonts/GeorgiaBold.woff') format('woff'),
+         url('../fonts/GeorgiaBold.ttf') format('truetype'),
+         url('../fonts/GeorgiaBold.svg#GeorgiaBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GeorgiaItalic';
+    src: url('../fonts/GeorgiaItalic.eot');
+    src: url('../fonts/GeorgiaItalic.eot') format('embedded-opentype'),
+         url('../fonts/GeorgiaItalic.woff2') format('woff2'),
+         url('../fonts/GeorgiaItalic.woff') format('woff'),
+         url('../fonts/GeorgiaItalic.ttf') format('truetype'),
+         url('../fonts/GeorgiaItalic.svg#GeorgiaItalic') format('svg');
+}
+
+
+
+// ANIMATIONS
+@keyframes animateBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+

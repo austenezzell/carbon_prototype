@@ -1,0 +1,333 @@
+/**
+*
+* Styleguide
+*
+**/
+html {
+  background: $light-grey;
+}
+body {
+  max-width:1800px;
+  background: $dark-grey;
+}
+.fullHeight {
+  position: relative;
+}
+.logoIntro {
+  height:100%;
+  width:100%;
+  position: absolute;
+  background: white;
+  z-index:2;
+}
+.vertCenter {
+  position: absolute;
+}
+.wrapper {
+  padding: 30px;
+  @media(min-width:700px){
+    padding: 60px;
+  }
+}
+.titleWrapper {
+  padding: 30px 30px 0;
+  @media(min-width:700px){
+    padding: 60px 60px 0;
+  }
+}
+.fullLogo {
+  display:inline-block;
+  z-index:1;
+  position: relative;
+  svg {
+    width:120px;
+    height:21px;
+  }
+}
+
+nav {
+  margin-top:60px;
+  z-index:1;
+  position: relative;
+  ul {
+    margin:0;
+    padding: 0;
+    li {
+      list-style:none;
+      a {
+        @extend .transition;
+        text-decoration:none;
+        color:white;
+        @extend .large;
+        font-weight:300;
+        margin: 3px 0;
+        display:inline-block;
+        font-family: 'Merriweather', serif;
+        &:hover {
+          color:black;
+        }
+      }
+    }
+  }
+}
+.rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.brandRollover {
+  background: $blue;
+}
+.logoRollover {
+  background: $light-grey;
+  .bar {
+    background: $dark-grey;
+  }
+}
+.colorRollover {
+  background: linear-gradient(to right, $blue, $green);
+}
+.typeRollover {
+  background: url('../images/photo1.jpg');
+  background-size:cover;
+}
+.imageryRollover {
+  background: url('../images/photo2.jpg');
+  background-size:cover;
+}
+.voiceRollover {
+  background: url('../images/photo3.jpg');
+  background-size:cover;
+}
+
+a.download {
+  z-index:1;
+  @extend .transition;
+  bottom:30px;
+  left:30px;
+  position: absolute;
+  font-weight:600;
+  text-decoration:none;
+  @media(min-width:600px){
+    bottom:60px;
+    left:60px;
+  }
+  span {
+    svg {
+      @extend .transition;
+      width:50px;
+      height:37px;
+      position: relative;
+      top: 10px;
+    }
+  }
+  &:hover {
+    color:white;
+    svg {
+      fill:white;
+    }
+  }
+}
+#brand {
+  background: white;
+  color:black;
+  h2 {
+    color:black;
+  }
+  .brandContent {
+    max-width:100%;
+    @media(min-width:700px) {
+      max-width:40%;
+    }
+  }
+
+}
+#logo {
+  background: $dark-grey;
+  p {
+    color:white;
+  }
+  .fLogo {
+    svg {
+      width:200px;
+      height:200px;
+      margin:30px 0 60px;
+    }
+  }
+  .fullLogo {
+    svg {
+      width:100%;
+      height:auto;
+      margin:30px 0;
+      max-width:450px;
+    }
+  }
+}
+.allColors {
+  border-top:1px solid $dark-grey;
+  background: url('/images/colors.svg') center center;
+  background-size: cover;
+}
+#color {
+  h2 {
+    color:black;
+  }
+}
+.colorCopy {
+  color:black;
+  margin:30px 0 60px 0;
+  max-width:100%;
+  @media(min-width:700px) {
+    max-width:40%;
+  }
+}
+
+.colors.blue {
+  background: $blue;
+  background: linear-gradient(to right, lighten($blue,10%), darken($blue,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($blue,10%);
+  }
+}
+.colors.green {
+  background: $green;
+  background: linear-gradient(to right, lighten($green,10%), darken($green,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($green,10%);
+  }
+}
+.colors.purple {
+  background: $purple;
+  background: linear-gradient(to right, lighten($purple,10%), darken($purple,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($purple,10%);
+  }
+
+}
+.colors.dark-blue {
+  background: $dark-blue;
+  background: linear-gradient(to right, lighten($dark-blue,10%), darken($dark-blue,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($dark-blue,10%);
+  }
+}
+.colors.bright-blue {
+  background: $bright-blue;
+  background: linear-gradient(to right, lighten($bright-blue,10%), darken($bright-blue,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($bright-blue,10%);
+  }
+}
+.colors.light-grey {
+  background: $light-grey;
+  background: linear-gradient(to right, lighten($light-grey,10%), darken($light-grey,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($light-grey,10%);
+  }
+}
+.colors.dark-grey {
+  background: $dark-grey;
+  background: linear-gradient(to right, lighten($dark-grey,10%), darken($dark-grey,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($dark-grey,10%);
+  }
+}
+.colors.off-white {
+  background: $off-white;
+  background: linear-gradient(to right, lighten($off-white,10%), darken($off-white,10%));
+  color:white;
+  @media(min-width:700px){
+    color:darken($off-white,10%);
+  }
+}
+
+#typography {
+  background: white;
+  .group {
+    margin: 0 0 30px 0;
+  }
+  .font {
+    display:none;
+    @media(min-width:700px) {
+      display:block;
+    }
+  }
+}
+
+.layer {
+    background-color: rgba(white, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#imagery {
+  h2 {
+    position: relative;
+  }
+  p {
+   max-width:100%;
+    @media(min-width:700px) {
+      max-width:40%;
+    }
+  }
+  .photo {
+    background-size: cover;
+  }
+  .imagery {
+    background: $off-white;
+  }
+  .photoOne {
+    background:url('../images/photo1.jpg');
+    background-size: cover;
+  }
+  .photoTwo {
+    background:url('../images/photo2.jpg');
+    background-size: cover;
+  }
+  .photoThree {
+    background:url('../images/photo3.jpg');
+    background-size: cover;
+  }
+  .photoFour {
+    background:url('../images/photo4.jpg') bottom center;
+    background-size: cover;
+  }
+  .logo .bar {
+    background: white;
+  }
+}
+
+#voice {
+  p {
+    color:white;
+    max-width:100%;
+    @media(min-width:700px) {
+      max-width:40%;
+    }
+  }
+  a.backToTop {
+    bottom:30px;
+    left:30px;
+    position: absolute;
+    font-weight:700;
+    text-decoration:none;
+    &:hover {
+      color:white;
+    }
+    @media(min-width:700px) {
+      bottom:60px;
+      left:60px;
+    }
+  }
+}

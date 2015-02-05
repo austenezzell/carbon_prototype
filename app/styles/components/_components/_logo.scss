@@ -1,0 +1,60 @@
+/**
+*
+* Logo
+*
+**/
+
+
+$logo-height: 300px;
+$logo-width: .87 * $logo-height;
+
+$logo-bar-height: 21%;
+$logo-bar-width: 33.33%;
+
+
+
+.logo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -$logo-height / 2;
+  margin-left: -$logo-width / 2;
+  height:$logo-height;
+  width:$logo-width;
+  .bar {
+    transition: all .5s;
+    height:$logo-bar-height;
+    width:$logo-bar-width;
+    background: darken($blue,15%);
+    position: absolute;
+    border-radius: 200px;
+    left:0;
+  }
+  .bar1 {
+    top:0;
+    width: $logo-bar-width * 3;
+    background: lighten($blue, 5%);
+  }
+  .bar2 {
+    top:50%;
+    margin-top: -$logo-bar-height / 2;
+    width: $logo-bar-width * 2;
+  }
+  .bar3 {
+    bottom: 0;
+    background: darken($blue, 20%);
+  }
+  &:hover {
+    .bar {
+      opacity:.6;
+    }
+  }
+}
+.screen-reader {
+  overflow:hidden;
+  height:1px;
+  width:1px;
+  margin:-1px;
+  position: absolute;
+}
+
